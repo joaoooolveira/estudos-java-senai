@@ -12,15 +12,13 @@ public class NumeroPrimo {
     }
 
     private static void ehPrimo(int num){
-        int ctrlLine = 0;
-
         if (num > 0){
             for(int i = 2; i <= num; i++) {
                 boolean primo = true;
-                ctrlLine++;
                 for(int j = 2; j < i; j++) {
                     if(i % j == 0) {
                         primo = false;
+                        break;
                     }
                 }
                 if(primo) {
