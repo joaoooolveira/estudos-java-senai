@@ -8,10 +8,10 @@ public class ValidacaoDeSenha {
     static Scanner sc = new Scanner(System.in);
 
     public static void main(String[] args){
-        validarSenha(senha);
+        validarSenha();
     }
 
-    private static void validarSenha(String validar){
+    private static void validarSenha(){
         while(tentativas < 3) {
             System.out.print("Digite a senha: ");
             senha = sc.next();
@@ -23,6 +23,8 @@ public class ValidacaoDeSenha {
                 tentativas++;
             }
         }
-        System.out.println("Você errou a senha 3 vezes. Tente novamente mais tarde.");
+        if(tentativas == 3) {
+            System.out.println("Você errou a senha 3 vezes. Tente novamente mais tarde.");
+        }
     }
 }

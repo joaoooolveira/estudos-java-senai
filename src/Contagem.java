@@ -10,7 +10,21 @@ public class Contagem {
         if(num > 0) {
             System.out.println("Contagem de 1 a " + num);
             for (int i = 1; i <= num; i++) {
-                System.out.println(i);
+                System.out.print(i + " ");
+            }
+
+            System.out.print("\nNúmeros pares: ");
+            for (int i = 1; i <= num; i++) {
+                if(i % 2 == 0){
+                    System.out.print(i + " ");
+                }
+            }
+
+            System.out.print("\nNúmeros ímpares: ");
+            for (int i = 1; i <= num; i++) {
+                if(i % 2 != 0) {
+                    System.out.print(i + " ");
+                }
             }
         }
         else {
