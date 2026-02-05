@@ -1,3 +1,5 @@
+package revisaoRepeticao;
+
 import java.util.Scanner;
 
 public class ClassificacaoDeNumeros {

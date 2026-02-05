@@ -1,4 +1,4 @@
-package Simulado;
+package revisaoRepeticao.Simulado;
 
 import java.util.Scanner;
 

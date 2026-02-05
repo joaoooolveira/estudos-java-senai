@@ -1,4 +1,4 @@
-package Simulado;
+package revisaoRepeticao.Simulado;
 
 public class Venda {
     private double valorVenda;

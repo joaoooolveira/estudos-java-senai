@@ -1,3 +1,5 @@
+package revisaoRepeticao;
+
 import java.util.Scanner;
 
 public class Contagem {
@@ -8,7 +10,7 @@ public class Contagem {
         int num = sc.nextInt();
 
         if(num > 0) {
-            System.out.println("Contagem de 1 a " + num);
+            System.out.println("revisaoRepeticao.Contagem de 1 a " + num);
             for (int i = 1; i <= num; i++) {
                 System.out.print(i + " ");
             }
