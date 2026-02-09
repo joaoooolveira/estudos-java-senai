@@ -16,6 +16,12 @@ public class Pessoa {
                 """.formatted(getNome(), getIdade());
     }
 
+    public void validarDados(int idade){
+        if(idade <= 0){
+            throw new IllegalArgumentException("Digite uma idade acima de 0.");
+        }
+    }
+
     public String getNome() {
         return nome;
     }
