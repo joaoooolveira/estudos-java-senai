@@ -5,6 +5,7 @@ public class Produto {
     private double preco;
 
     public Produto(String nome, double preco) {
+        validarDados(nome, preco);
         this.nome = nome;
         this.preco = preco;
     }
@@ -18,6 +19,7 @@ public class Produto {
     }
 
     public void setNome(String nome) {
+        validarDados(nome, preco);
         this.nome = nome;
     }
 
@@ -26,6 +28,16 @@ public class Produto {
     }
 
     public void setPreco(double preco) {
+        validarDados(nome, preco);
         this.preco = preco;
+    }
+
+    public void validarDados(String nome, double preco){
+        if(nome.isBlank()){
+            throw new IllegalArgumentException("Coloque o nome do produto.");
+        }
+        if(preco <= 0){
+            throw new IllegalArgumentException("Digite o preco do produto.");
+        }
     }
 }
