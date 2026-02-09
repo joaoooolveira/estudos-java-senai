@@ -29,7 +29,6 @@ public class Pessoa {
     }
 
     public void setNome(String nome) {
-        validarDados(idade);
         this.nome = nome;
     }
 
@@ -38,6 +37,7 @@ public class Pessoa {
     }
 
     public void setIdade(int idade) {
+        validarDados(idade);
         this.idade = idade;
     }
 }
