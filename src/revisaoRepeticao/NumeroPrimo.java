@@ -9,7 +9,7 @@ public class NumeroPrimo {
         int num = sc.nextInt();
         System.out.println();
 
-        System.out.println("Numeros primos de 0 a " + num + ": ");
+        System.out.println("Numeros primos de 1 a " + num + ": ");
         ehPrimo(num);
     }
 
