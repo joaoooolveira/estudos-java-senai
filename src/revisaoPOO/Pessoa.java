@@ -9,6 +9,12 @@ public class Pessoa {
         this.idade = idade;
     }
 
+    public String exibirDados(){
+        return """
+                Nome: %s
+                Idade: %d""".formatted(getNome(), getIdade());
+    }
+
     public String getNome() {
         return nome;
     }
