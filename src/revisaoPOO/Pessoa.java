@@ -12,7 +12,8 @@ public class Pessoa {
     public String exibirDados(){
         return """
                 Nome: %s
-                Idade: %d""".formatted(getNome(), getIdade());
+                Idade: %d
+                """.formatted(getNome(), getIdade());
     }
 
     public String getNome() {
