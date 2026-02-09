@@ -11,7 +11,7 @@ public class Produto {
     }
 
     public double calcularPrecoFinal(){
-        return 0;
+        return getPreco();
     }
 
     public String getNome() {
