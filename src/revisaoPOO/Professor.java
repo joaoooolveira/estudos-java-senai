@@ -17,16 +17,8 @@ public class Professor extends Pessoa{
                 Salario: %.2f""".formatted(disciplina, salario);
     }
 
-    public String getDisciplina() {
-        return disciplina;
-    }
-
     public void setDisciplina(String disciplina) {
         this.disciplina = disciplina;
-    }
-
-    public double getSalario() {
-        return salario;
     }
 
     public void setSalario(double salario) {
