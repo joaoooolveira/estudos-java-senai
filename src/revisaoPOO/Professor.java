@@ -16,4 +16,27 @@ public class Professor extends Pessoa{
                 Disciplina: %s
                 Salario: %.2f""".formatted(disciplina, salario);
     }
+
+    public String getDisciplina() {
+        return disciplina;
+    }
+
+    public void setDisciplina(String disciplina) {
+        this.disciplina = disciplina;
+    }
+
+    public double getSalario() {
+        return salario;
+    }
+
+    public void setSalario(double salario) {
+        validarSalario(salario);
+        this.salario = salario;
+    }
+
+    public void validarSalario(double salario){
+        if(salario <= 0){
+            throw new IllegalArgumentException("Digite um salario acima de 0");
+        }
+    }
 }

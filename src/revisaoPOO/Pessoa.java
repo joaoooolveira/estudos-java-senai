@@ -5,6 +5,8 @@ public class Pessoa {
     private int idade;
 
     public Pessoa(String nome, int idade){
+        validarDados(idade);
+
         this.nome = nome;
         this.idade = idade;
     }
@@ -27,6 +29,7 @@ public class Pessoa {
     }
 
     public void setNome(String nome) {
+        validarDados(idade);
         this.nome = nome;
     }
 
