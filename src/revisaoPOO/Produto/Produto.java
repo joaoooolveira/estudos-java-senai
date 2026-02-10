@@ -14,6 +14,12 @@ public class Produto {
         return getPreco();
     }
 
+    public String exibirDados(){
+        return """
+                Nome: %s
+                """.formatted(nome);
+    }
+
     public String getNome() {
         return nome;
     }

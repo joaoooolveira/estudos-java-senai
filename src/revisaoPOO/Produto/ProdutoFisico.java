@@ -21,6 +21,14 @@ public class ProdutoFisico extends Produto{
         return super.calcularPrecoFinal() + valorFrete;
     }
 
+    @Override
+    public String exibirDados() {
+        return super.exibirDados() + """
+                Tipo do produto: Fisico
+                Preco: %.2f
+                """.formatted(calcularPrecoFinal());
+    }
+
     public void setValorFrete(double valorFrete) {
         this.valorFrete = valorFrete;
     }
